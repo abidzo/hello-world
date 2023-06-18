@@ -1,0 +1,35 @@
+use library; // Create or switch to the "library" database
+
+db.createCollection("books"); // Create a collection called "books"
+
+// Insert sample data
+db.books.insertMany([
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Fiction",
+    "publicationYear": 1925,
+    "pages": 180
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Fiction",
+    "publicationYear": 1960,
+    "pages": 281
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Dystopian",
+    "publicationYear": 1949,
+    "pages": 328
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "genre": "Fiction",
+    "publicationYear": 1951,
+    "pages": 224
+  }
+]);
